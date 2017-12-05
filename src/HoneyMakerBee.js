@@ -5,12 +5,12 @@ class HoneyMakerBee extends Bee {
     this.job = 'make honey';
     this.honeyPot = 0;
   }
-
-  makeHoney() {
-    this.honeyPot++;
-  }
-
-  giveHoney() {
-    this.honeyPot--;
-  }
 };
+
+HoneyMakerBee.prototype.makeHoney = function() {
+  this.honeyPot++;
+}
+
+HoneyMakerBee.prototype.giveHoney = function() {
+  this.honeyPot--;
+}

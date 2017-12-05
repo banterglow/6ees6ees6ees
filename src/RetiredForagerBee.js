@@ -7,11 +7,12 @@ class RetiredForagerBee extends ForagerBee {
     this.color = 'grey';
   }
 
-  forage() {
-    return 'I am too old, let me play cards instead';
-  }
 
-  gamble(treasure) {
-    this.treasureChest.push(treasure);
-  }
 };
+RetiredForagerBee.prototype.forage = function() {
+  return 'I am too old, let me play cards instead';
+}
+
+RetiredForagerBee.prototype.gamble = function(treasure) {
+  this.treasureChest.push(treasure);
+}
